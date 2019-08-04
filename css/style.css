@@ -1,0 +1,404 @@
+/* CSS by Krunal Wankhede */
+
+
+
+/*!===================================================
+Theme Color Code - #e30202
+=====================================================*/
+/*!===================================================
+Global Rule
+=====================================================*/
+/*!===================================================
+Bootstrap Edited
+=====================================================*/
+/*!===================================================
+Header
+=====================================================*/
+/*!===================================================
+Banner
+=====================================================*/
+
+
+/*  Global Rule Start */
+
+@font-face {
+    font-family: 'Gravitas One';
+    src: url('../fonts/GravitasOne.eot');
+    src: url('../fonts/GravitasOne.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/GravitasOne.woff2') format('woff2'),
+        url('../fonts/GravitasOne.woff') format('woff'),
+        url('../fonts/GravitasOne.ttf') format('truetype'),
+        url('../fonts/GravitasOne.svg#GravitasOne') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+    background: #fcf0ec;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+h2 {
+    font-family: 'Gravitas One';
+    color: #FFF;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0 30px 0;
+    font-size: 28px;
+}
+.btn-theme {
+    background-color: #e30202;
+    color: #FFFFFF;
+}
+
+.btn-outline-theme {
+    border: 1px solid #e30202;
+    color: #e30202;
+}
+
+.btn-theme:hover {
+    background-color: #c70303;
+    color: #FFF;
+}
+
+.btn-outline-theme:hover {
+    background-color: #e30202;
+    color: #FFF;
+}
+
+.btn-theme:focus,
+.btn-outline-theme:focus {
+    box-shadow: 0 0 0 0.2rem rgba(227, 2, 2, 0.5);
+}
+
+/*  Global Rule End */
+
+/*  Bootstrap Edited Start */
+.form-control {
+    height: calc(1.5em + 0.65rem + 2px);
+    border-radius: 20px;
+    border: 1px solid #eaeaea;
+    box-shadow: 0 0 5px 0px #ece0dc;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.25);
+    border-color: #ff8080;
+}
+
+@media (max-width: 767px) {
+    .form-control {
+        margin-bottom: 10px;
+    }
+}
+
+.btn {
+    padding: .175rem .75rem;
+    border-radius: 20px;
+    box-shadow: 0 0 5px 2px #e0c3ba;
+}
+
+/*  Bootstrap Edited End */
+
+/*  Header Start */
+@media (max-width: 767px) {
+    header form {
+        padding: 50px 10px;
+        background: #FFF;
+    }
+
+    header form .btn {
+        display: block;
+        width: 100%;
+        margin-top: 10px;
+        padding: 0.575rem .75rem;
+    }
+
+    .form-control {
+        height: calc(1.5em + 1.05rem + 2px);
+    }
+}
+
+/*  Header End */
+
+/*  Banner Start */
+.banner .img {
+    position: absolute;
+    top: 13%;
+    right: 0;
+    width: 485px;
+    z-index: -1;
+}
+
+.banner .align-items-center {
+    min-height: 598px;
+}
+
+.banner h1 {
+    font-family: 'Gravitas One';
+    font-weight: normal;
+    font-size: 41px;
+    text-align: center;
+    line-height: 1.4;
+    letter-spacing: 1px;
+}
+
+.banner h1 span {
+    font-weight: bold;
+    color: #e30202
+}
+
+.banner h3 {
+    font-weight: 300;
+    line-height: 1.55;
+    font-size: 22px;
+    padding-right: 23%;
+    padding-left: 50px;
+    margin: 35px 0;
+}
+
+.banner .btn {
+    padding: 0.775rem 2.95rem;
+    font-size: 18px;
+}
+
+@media (max-width: 767px) {
+    .banner{
+        padding-bottom: 45px;
+    }
+    .banner .img{display: none;}
+}
+
+/*  Banner End */
+
+.recruiter-say {
+    background: #c70303;
+    border-radius: 0 0 50% 50% / 15%;
+    padding: 60px 0 10% 0;
+}
+
+
+
+.cardBox {
+    padding: 20px;
+    color: #FFF;
+    height: 0;
+}
+
+.cardBox.inactive .bottom-box {
+    opacity: 0;
+}
+
+.cardBox.card {
+    color: #212529;
+    transition: height .8s;
+    height: 100%;
+    box-shadow: 0 0 10px 2px #3e0505;
+}
+.cardBox .top-box .rounded-circle{
+transform: rotate(0deg);
+transition:  all ease .4s;
+width: 80px;
+height: 80px;
+border: 2px solid #cacaca;
+}
+.cardBox.card .top-box .rounded-circle{
+    transform: rotate(360deg);
+    }
+
+.cardBox h4 {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+.cardBox span {
+    font-size: 14px;
+}
+
+.cardBox span+img {
+    border: 1px solid #ececec;
+    padding: 1px 4px;
+    width: 30px;
+    background-color: #F0F0F0;
+}
+
+.cardBox.card .bottom-box {
+    opacity: 1;
+    border-top: 1px solid #e8e8e8;
+    margin-top: 5px;
+    padding-top: 5px;
+    transition: all ease .8s;
+}
+
+@media (max-width: 767px) {
+    .recruiter-say{border-radius: 0;}
+    .cardBox{margin-bottom: 10px;}
+    .cardBox.inactive{background: #FFF;border-radius: .25rem;color: #212529; height: auto;
+        box-shadow: 0 0 10px 2px #3e0505;padding: 20px; }
+        .cardBox.card{height: auto;}
+    .cardBox.inactive .bottom-box {
+        opacity: 1;
+    }
+}
+
+.sectionContent{padding: 70px 0;}
+.sectionContent article {
+    background: #FFF;
+    border-radius: 55px;
+    padding: 25px;
+    margin: 10px 0;
+    border: 1px solid #e3e3e3;
+    box-shadow: 0 0 6px 2px #e4d6d2;
+}
+.sectionContent article h3{font-weight: 100;font-size: 24px; padding-bottom: 10px;}
+.sectionContent article h5{font-weight: 300;font-size: 18px;line-height: 1.4;}
+.sectionContent span{
+    font-family: 'Gravitas One';
+    background: #FFF;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 36px;
+    color: #c70303;
+    display: inline-block;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    border: 1px solid #FDD2D2;
+}
+
+
+.slick-slide {
+    margin: 0px 20px;
+}
+
+.slick-slide img {
+    width: 100%;
+}
+
+.slick-slider
+{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list
+{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.slick-list:focus
+{
+    outline: none;
+}
+.slick-list.dragging
+{
+    cursor: pointer;
+    cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list
+{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+
+.slick-track
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after
+{
+    display: table;
+    content: '';
+}
+.slick-track:after
+{
+    clear: both;
+}
+.slick-loading .slick-track
+{
+    visibility: hidden;
+}
+
+.slick-slide
+{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide
+{
+    float: right;
+}
+.slick-slide img
+{
+    display: block;
+}
+.slick-slide.slick-loading img
+{
+    display: none;
+}
+.slick-slide.dragging img
+{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide
+{
+    display: block;
+}
+.slick-loading .slick-slide
+{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide
+{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+.ourClient{
+    border-radius: 15% / 50% 50% 0% 0%;
+    background: #FFF;
+    padding: 5% 0 10%  0;
+}
+.ourClient h2{color: #000; }
+
+@media (max-width: 767px) {
+    .ourClient{
+        border-radius: 0}
+}
+
+footer{background: #202020; padding: 10px; color: #FFF;}
+footer a{font-size: 12px; color: #FFF; font-weight: 300;}
+footer p{text-align: right;font-size: 12px; margin: 0;}
+@media (max-width: 767px) {
+    footer, footer p{text-align: center;}
+}
